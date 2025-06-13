@@ -1,0 +1,11 @@
+name: Use Reusable C++ Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  call-reusable:
+    uses: ./.github/workflows/cpp-make-reusable.yml
